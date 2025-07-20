@@ -23,6 +23,17 @@
 
 Scalable datastore for metrics, events, and real-time analytics.
 
+## Forked
+
+This repository has been forked from https://github.com/hassio-addons/addon-influxdb on: **20/07/2025**.
+
+The only changes made are: The **'collectd'** plug-in has been enabled in the influxdb.conf, the collectd **types.db** has been added and the collectd port: **25826** has been exposed.
+
+The best way to use would be to copy the 'influxdb' folder to your Home Assistant 'addons' folder, then in Home Assistant, refresh the add-on store and install from the 'Local add-ons'.
+
+Also had to alter the Dockerfile due to some no longer available dependencies.
+
+
 ## About
 
 InfluxDB is an open source time series database optimized for high-write-volume.
